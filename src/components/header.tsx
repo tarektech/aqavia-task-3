@@ -14,9 +14,11 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-4xl px-6 py-4 rounded-full  bg-background drop-shadow-lg border-b-2 border-b-primary  ">
+    <header className="fixed top-4 inset-x-4 sm:inset-x-6 z-50 mx-auto max-w-4xl px-4 sm:px-6 py-4 rounded-full  bg-background drop-shadow-lg border-b-2 border-b-primary  ">
       <div className="mx-auto flex max-w-4xl items-center justify-between">
-        <h1 className="text-xl font-semibold text-primary">Currency Converter</h1>
+        <h1 className="text-xl font-semibold text-primary">
+          Currency Converter
+        </h1>
         <Button
           variant="ghost"
           size="icon"

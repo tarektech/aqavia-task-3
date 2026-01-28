@@ -9,8 +9,10 @@ import {
 } from "@/types/types";
 import { filterCurrencies } from "@/utils/currency-helper";
 
-// the api key
-const EXCHANGE_RATES_API_KEY = process.env.EXCHANGE_RATES_API_KEY;
+
+const EXCHANGE_RATES_API_KEY =
+  process.env.NEXT_PUBLIC_EXCHANGE_RATES_API_KEY ||
+  process.env.EXCHANGE_RATES_API_KEY;
 // the url for the currencies symbols
 const EXCHANGE_CURRENCY_URL = `https://api.currencyfreaks.com/v2.0/supported-currencies?apikey=${EXCHANGE_RATES_API_KEY}`;
 // the url for the exchange symbols
